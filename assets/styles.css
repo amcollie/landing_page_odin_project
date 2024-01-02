@@ -1,49 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,100&display=swap');
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/* Nav section */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: #1f2937;
+}
+
+header nav div.logo{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #1f2937;
+    display: flex;
+    flex: 1;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero .btn {
+    margin-top: 5px;
+    padding: 5px 20px;
+    background-color: #3882f6;
+    border: 2px #3882f6 solid;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.hero div:last-child {
+    height: 200px;
+    width: 400px;
+    background-color: #808080;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* random Information Section */
+.information-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.information-container h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-top: 20px;
+}
+
+.information-container .boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.information-container div.boxes .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    width: 190px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px #00d2ff solid;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Quote Section */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    background-color: #e5e7eb;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.quote-container p:first-child {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    margin: 10px 200px;
+    padding: 0px 350px;
+}
+
+.quote-container p:last-child {
+    margin: 10px 200px;
+    align-self: self-end;
+    font-size: 18px;
+    padding: 0 380px
+}
+
+/* Call to action section */
+.action-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 100px;
+}
+
+.action-container .action {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 40px 220px;
+    border-radius: 6px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    width: 60vw;
+}
+
+.action-container .action .action-text {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.action-container .action p:first-child {
+    font-weight: 900;
+}
+
+.action p:last-child {
+    font-size: 12px;
+}
+
+.action-container .action button {
+    background-color: #3882f6;
+    border: 2px #e5e7eb solid;
+    color: #f9faf8;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Footer section */
+footer.footer {
+    flex: 1 1 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.hero {
-    flex: 7 1 350px;
     background-color: #1f2937;
-    display: flex;
-}
-
-.information-container {
-    flex: 7 1 350px;
-    background-color: #fff;
-    display: flex;
-    /* flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center */
-}
-
-.quote-container {
-    flex: 6 26 300;
-    background-color: #e5e7eb;
-    display: flex;
-}
-
-.action-container {
-    flex: 5 2 250px;
-    display: flex;
-}
-
-.footer {
-    flex: 1 2 50px;
-    background-color: #1f2937;
-    color: #f9faf7;
+    color: #e5e7eb;
+    padding: 20px ;
+    font-size: 12px;
 }
